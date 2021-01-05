@@ -7,4 +7,4 @@ It works offline and it requires you to download your data manually, but it does
 
 It should work on any platform, but is designed for desktop machines. Developing it for mobile would only require css editing to fit smaller screens. It was tested on Brave 1.18.77 (Chromium: 87.0.4280.101 (Official Build) (64-bit)), Firefox 84.0.1 (64-bit) and Opera 73.0.3856.284. I didn't find bugs so please report them if you find any.
 
-## To use this download or clone, then open index.html, all the information on usage is there.
+## To use this, download or clone, then open index.html, all the information on usage is there.
