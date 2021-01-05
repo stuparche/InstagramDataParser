@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Test</title>
+        <meta http-equiv = "Content-Type" content = "text/html; charset=utf-8" />
+		<link rel = "stylesheet" href = "assets/style/style.css">
+        <script type = "text/javascript" src = "parserScript.js"></script>
+		
+		
+        
+	
+	</head>
+	<body onload="init()">
+		<div class = "buttonHolder">
+			<label class = "inputFile">
+					<input id = "fileSelector" type = "file" accept = ".json"/>
+					Choose file
+			</label>
+			<br>
+			<input class = "inputButton" type ="button" onclick = "getFollowers()" value = "Get Followers">
+			<input class = "inputButton" type ="button" onclick = "getFollowing()" value = "Get Following">
+			<input class = "inputButton" type ="button" onclick ="getNonFollowers()" value = "Get non-followers">
+			<input class = "inputButton" type ="button" onclick ="getFollowRequests()" value = "Get sent requests">
+			<input class = "inputButton" type ="button" onclick ="getCloseFriends()" value = "Get Close Friends">
+			<input class = "inputButton" type ="button" onclick ="getNonCloseFollowers()" value = "Get non-close followers">
+			<input class = "inputButton" type ="button" onclick ="getCloseNonFollowers()" value = "Get close non-followers">
+			<input class = "inputButton" type ="button" onclick ="clearList()" value = "Clear List">
+			
+		</div>
+		
+		<div class = "explainer">
+				<h2>
+				How to use
+				</h2>
+				
+				<p>
+				Download a copy of your instagram data. Instagram will send it to your email.
+				</p>
+				
+				<p>
+				Unzip the archive you downloaded.
+				</p>
+				
+				<p>
+				Click choose file on the left side of the screen and select the file you wish to use.
+				Your follower data is stored in a folder where you extracted the downloaded .zip archive. You should look for connections.json.
+				</p>
+				
+				<p>
+				Click the button you wish to execute.
+				</p>
+				
+				<p>
+				Get Followers - Displays a list of people who are your followers.
+				</p>
+				
+				<p>
+				Get Following - Displays a list of people that you follow.
+				</p>
+				
+				<p>
+				Get non-followers - Displays a list of people that you follow, but they don't follow you.
+				</p>
+				
+				<p>
+				Get sent requests - Displays a list of people that have pending follow request from you.
+				</p>
+				
+				<p>
+				Get Close Friends - Displays a list of your close friends
+				</p>
+				
+				<p>
+				Get non-close followers - Displays a list of people who are your followers, but who are not in your close friends.
+				</p>
+				
+				<p>
+				Get close non-followers - Displays a list of accounts who are in your close friends list, but who don't follow you.
+				</p>
+				
+				<p>
+				Clear List - Erases the list from the screen.
+				</p>
+				
+			</div>
+			
+		
+		<div id = "linkHolder" class = "contentPlacer"></div>
+		
+			
+	
+	</body>
+</html>
